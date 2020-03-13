@@ -12,35 +12,37 @@
 
 
 <body class="chats-body">
-    <div class="status-bar">
-        <div class="status-bar__columon">
-            <span class="status-bar__clock">10:26</span>
+    <div class="header-wrapper">
+        <div class="status-bar">
+            <div class="status-bar__columon">
+                <span class="status-bar__clock">10:26</span>
+            </div>
+            <div class="status-bar__columon">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
         </div>
-        <div class="status-bar__columon">
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">100%</span>
-            <i class="fas fa-battery-full"></i>
-        </div>
-    </div>
-    <header class="header">
-        <div class="header__header-column">
-            <a href="index.html" class="header__back-btn">
-                <i class="fas fa-arrow-left"></i>
-            </a>
+        <header class="header">
+            <div class="header__header-column">
+                <a href="index.html" class="header__back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
 
-            <h1 class="header__title"> Living Proof `s Father :) </h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-bars"></i>
-            </span>
-        </div>
-    </header>
+                <h1 class="header__title"> Living Proof `s Father :) </h1>
+            </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </header>
+    </div>
     <main class="chat">
         <ul class="chat__messages">
             <span class="chat__timestamp">Tuesday, October 1, 2019 </span>
@@ -89,14 +91,12 @@
             </li>
         </ul>
     </main>
-    <div class="chat__write">
-        <div class="chat__write-column">
+    <div class="chat__write--container">
+        <input type="text" class="chat__write" placeholder="  Send message" class="chat__write-input" />
+        <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="Send message" class="chat__write-input" />
-        </div>
-        <div class="chat__write-column">
+        <div class="chat__icon-right">
             <span class="chat__write-icon">
                 <i class="far fa-smile-wink"></i>
             </span>
@@ -104,7 +104,5 @@
                 <i class="fas fa-microphone"></i>
             </span>
         </div>
-    </div>
 </body>
-
 </html>
