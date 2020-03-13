@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <title>Chat | Kakao Clone </title>
 </head>
 
-<body>
+
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__columon">
             <span class="status-bar__clock">10:26</span>
@@ -25,7 +26,7 @@
     </div>
     <header class="header">
         <div class="header__header-column">
-            <a href="index.html" class="header__backbutton-btn">
+            <a href="index.html" class="header__back-btn">
                 <i class="fas fa-arrow-left"></i>
             </a>
 
@@ -35,29 +36,54 @@
             <span class="header__icon">
                 <i class="fas fa-search"></i>
             </span>
-            <div class="header__icon">
+            <span class="header__icon">
                 <i class="fas fa-bars"></i>
-            </div>
+            </span>
         </div>
     </header>
     <main class="chat">
         <ul class="chat__messages">
             <span class="chat__timestamp">Tuesday, October 1, 2019 </span>
             <li class="incomming-message message">
-                <img src="images/avatar2.png" width="45" height="45" class="g-avtar-message" alt="avatar2">
+                <img src="images/avatar2.png" width="45" height="45" class="m-avatar message__avatar" alt="avatar2" />
                 <div class="messsage__content">
                     <span class="message__author">LEE SEUNG HYUB</span>
                     <div class="message__bubble">
-                        Congrats I love you :) !
-                        <span class="messgage__timestamp"></span>
+                        Where are you?
                     </div>
                 </div>
 
-            <li class="incomming-message message">
+            <li class="sent-message message">
                 <span class="messgage__timestamp"></span>
                 <div class="messsage__content">
                     <div class="message__bubble">
-                        Thank you see you soon :) !
+                        I am in front of the FNC Company.
+                    </div>
+                </div>
+            </li>
+            <li class="incomming-message message">
+                <img src="images/avatar2.png" width="45" height="45" class="m-avatar message__avatar" alt="avatar2" />
+                <div class="messsage__content">
+                    <span class="message__author">LEE SEUNG HYUB</span>
+                    <div class="message__bubble">
+                        I'm at Cheongdam Station. Would you like to meet up and exercise?
+                    </div>
+                </div>
+
+            <li class="sent-message message">
+                <span class="messgage__timestamp"></span>
+                <div class="messsage__content">
+                    <div class="message__bubble">
+                        Then let's meet at Exit 2.
+                    </div>
+                </div>
+            </li>
+            <li class="incomming-message message">
+                <img src="images/avatar2.png" width="45" height="45" class="m-avatar message__avatar" alt="avatar2" />
+                <div class="messsage__content">
+                    <span class="message__author">LEE SEUNG HYUB</span>
+                    <div class="message__bubble">
+                        That sounds great. I'll see you ~ ^^
                     </div>
                 </div>
             </li>
